@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PSSDotNetCore.ConsoleApp
+namespace PSSDotNetCore.RestApi
 {
     internal static class ConnectionString
     {
@@ -14,7 +14,8 @@ namespace PSSDotNetCore.ConsoleApp
             DataSource = "DESKTOP-HEQCGI8",
             InitialCatalog = "DotNetTrainingBatch4",
             UserID = "sa",
-            Password = "sa@123"
+            Password = "sa@123",
+            TrustServerCertificate = true
         };
     }
 }

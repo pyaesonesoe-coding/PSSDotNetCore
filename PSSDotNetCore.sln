@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.ConsoleApp", "PSSDotNetCore.ConsoleApp\PSSDotNetCore.ConsoleApp.csproj", "{403A5060-A220-4DA6-A376-16DE3909A4EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.ConsoleApp", "PSSDotNetCore.ConsoleApp\PSSDotNetCore.ConsoleApp.csproj", "{403A5060-A220-4DA6-A376-16DE3909A4EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.RestApi", "PSSDotNetCore.RestApi\PSSDotNetCore.RestApi.csproj", "{2CDBC1A4-6DC4-4BEA-ADA8-5960F4B71712}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{18555828-C9D3-4B27-BD4D-5FD6F75CAB6D}"
+	ProjectSection(SolutionItems) = preProject
+		PSSDotNetCore.sql.sql = PSSDotNetCore.sql.sql
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,10 @@ Global
 		{403A5060-A220-4DA6-A376-16DE3909A4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{403A5060-A220-4DA6-A376-16DE3909A4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{403A5060-A220-4DA6-A376-16DE3909A4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CDBC1A4-6DC4-4BEA-ADA8-5960F4B71712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CDBC1A4-6DC4-4BEA-ADA8-5960F4B71712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CDBC1A4-6DC4-4BEA-ADA8-5960F4B71712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CDBC1A4-6DC4-4BEA-ADA8-5960F4B71712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,6 @@
 ﻿using Dapper;
+using PSSDotNetCore.ConsoleApp.Dtos;
+using PSSDotNetCore.ConsoleApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PSSDotNetCore.ConsoleApp
+namespace PSSDotNetCore.ConsoleApp.DapperExamples
 {
     internal class DapperExample
     {
@@ -33,14 +35,14 @@ namespace PSSDotNetCore.ConsoleApp
                 Console.WriteLine(item.BlogAuthor);
                 Console.WriteLine(item.BlogContent);
                 Console.WriteLine("---------------------------------------");
-            }           
+            }
         }
 
         private void Edit(int id)
         {
             using IDbConnection db = new SqlConnection(ConnectionString.SqlConnectionStringBuilder.ConnectionString);
             var item = db.Query("select * from tbl_blog where blogid = @BlogId", new BlogDto { BlogId = id }).FirstOrDefault();
-            if(item is null)
+            if (item is null)
             //(item == null)
             {
                 Console.WriteLine("No data found.");
@@ -53,7 +55,7 @@ namespace PSSDotNetCore.ConsoleApp
             Console.WriteLine(item.BlogContent);
             Console.WriteLine("---------------------------------------");
         }
-        
+
         private void Create(string title, string author, string content)
         {
             var item = new BlogDto
@@ -72,7 +74,7 @@ namespace PSSDotNetCore.ConsoleApp
             @BlogAuthor,
 			@BlogContent)";
             using IDbConnection db = new SqlConnection(ConnectionString.SqlConnectionStringBuilder.ConnectionString);
-            int result = db.Execute(query,item);
+            int result = db.Execute(query, item);
             string message = result > 0 ? "Saving Successful." : "Saving Failed.";
             Console.WriteLine(message);
         }
@@ -102,8 +104,8 @@ namespace PSSDotNetCore.ConsoleApp
         private void Delete(int id)
         {
             var item = new BlogDto
-            { 
-                BlogId = id 
+            {
+                BlogId = id
             };
 
             string query = @"DELETE FROM [dbo].[Tbl_Blog] WHERE BlogId = @BlogId";

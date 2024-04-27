@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PSSDotNetCore.ConsoleApp
+namespace PSSDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     internal class AdoDotNetExample
     {
@@ -90,7 +90,7 @@ namespace PSSDotNetCore.ConsoleApp
             connection.Close();
 
             string message = result > 0 ? "Saving Successful." : "Saving Failed.";
-            Console.WriteLine (message);
+            Console.WriteLine(message);
         }
 
         public void Update(int id, string title, string author, string content)
