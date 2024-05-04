@@ -18,7 +18,6 @@ namespace PSSDotNetCore.RestApi.Controllers
         {
             _context = new AppDbContext();
         }
-
         [HttpGet]
         public IActionResult Read()
         {
