@@ -13,7 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.Shared", "PSSDotNetCore.Shared\PSSDotNetCore.Shared.csproj", "{F5E5E1A9-5A00-4058-8EEE-BA2967F85608}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.Shared", "PSSDotNetCore.Shared\PSSDotNetCore.Shared.csproj", "{F5E5E1A9-5A00-4058-8EEE-BA2967F85608}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.RestApiWithNLayer", "PSSDotNetCore.RestApiWithNLayer\PSSDotNetCore.RestApiWithNLayer.csproj", "{7721F6A9-BF47-46F3-BE7C-9D30680D9DA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.ConsoleAppHttpClient", "PSSDotNetCore.ConsoleAppHttpClient\PSSDotNetCore.ConsoleAppHttpClient.csproj", "{BD5BD1CE-8A16-4905-BA20-5946E193BB3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.ConsoleAppHttpClientExamples", "PSSDotNetCore.ConsoleAppHttpClientExamples\PSSDotNetCore.ConsoleAppHttpClientExamples.csproj", "{18B0F9FB-2E30-4921-AE89-74BB94251A66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.ConsoleAppRestClientExamples", "PSSDotNetCore.ConsoleAppRestClientExamples\PSSDotNetCore.ConsoleAppRestClientExamples.csproj", "{58A1E9E3-328F-41EF-A4A0-C19C565ED531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{F5E5E1A9-5A00-4058-8EEE-BA2967F85608}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5E5E1A9-5A00-4058-8EEE-BA2967F85608}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5E5E1A9-5A00-4058-8EEE-BA2967F85608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7721F6A9-BF47-46F3-BE7C-9D30680D9DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7721F6A9-BF47-46F3-BE7C-9D30680D9DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7721F6A9-BF47-46F3-BE7C-9D30680D9DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7721F6A9-BF47-46F3-BE7C-9D30680D9DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5BD1CE-8A16-4905-BA20-5946E193BB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5BD1CE-8A16-4905-BA20-5946E193BB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5BD1CE-8A16-4905-BA20-5946E193BB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5BD1CE-8A16-4905-BA20-5946E193BB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B0F9FB-2E30-4921-AE89-74BB94251A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B0F9FB-2E30-4921-AE89-74BB94251A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B0F9FB-2E30-4921-AE89-74BB94251A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B0F9FB-2E30-4921-AE89-74BB94251A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A1E9E3-328F-41EF-A4A0-C19C565ED531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A1E9E3-328F-41EF-A4A0-C19C565ED531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A1E9E3-328F-41EF-A4A0-C19C565ED531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A1E9E3-328F-41EF-A4A0-C19C565ED531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
