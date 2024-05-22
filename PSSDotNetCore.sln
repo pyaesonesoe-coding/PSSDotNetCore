@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.ConsoleAppHtt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.ConsoleAppRestClientExamples", "PSSDotNetCore.ConsoleAppRestClientExamples\PSSDotNetCore.ConsoleAppRestClientExamples.csproj", "{58A1E9E3-328F-41EF-A4A0-C19C565ED531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.WinFormsApp", "PSSDotNetCore.WinFormsApp\PSSDotNetCore.WinFormsApp.csproj", "{54DC7ABD-08A8-4C0B-AA47-1A18BE064BDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.WinFormsApp", "PSSDotNetCore.WinFormsApp\PSSDotNetCore.WinFormsApp.csproj", "{54DC7ABD-08A8-4C0B-AA47-1A18BE064BDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.PizzaApi", "PSSDotNetCore.PizzaApi\PSSDotNetCore.PizzaApi.csproj", "{C934D47A-C7CE-47EF-B7A2-B0637EB728C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.ConsoleAppRefitExamples", "PSSDotNetCore.ConsoleAppRefitExamples\PSSDotNetCore.ConsoleAppRefitExamples.csproj", "{1434E479-5EA2-4845-95D4-0DE337577E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{54DC7ABD-08A8-4C0B-AA47-1A18BE064BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54DC7ABD-08A8-4C0B-AA47-1A18BE064BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54DC7ABD-08A8-4C0B-AA47-1A18BE064BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C934D47A-C7CE-47EF-B7A2-B0637EB728C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C934D47A-C7CE-47EF-B7A2-B0637EB728C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C934D47A-C7CE-47EF-B7A2-B0637EB728C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C934D47A-C7CE-47EF-B7A2-B0637EB728C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1434E479-5EA2-4845-95D4-0DE337577E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1434E479-5EA2-4845-95D4-0DE337577E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1434E479-5EA2-4845-95D4-0DE337577E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1434E479-5EA2-4845-95D4-0DE337577E60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
