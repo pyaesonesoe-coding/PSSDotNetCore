@@ -36,6 +36,7 @@
             txtTitle = new TextBox();
             txtAuthor = new TextBox();
             txtContent = new TextBox();
+            btnUpdate = new Button();
             SuspendLayout();
             // 
             // label1
@@ -115,11 +116,27 @@
             txtContent.Size = new Size(293, 78);
             txtContent.TabIndex = 7;
             // 
-            // Form1
+            // btnUpdate
+            // 
+            btnUpdate.BackColor = Color.FromArgb(128, 128, 255);
+            btnUpdate.FlatAppearance.BorderSize = 0;
+            btnUpdate.FlatStyle = FlatStyle.Flat;
+            btnUpdate.ForeColor = Color.White;
+            btnUpdate.Location = new Point(230, 291);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(75, 26);
+            btnUpdate.TabIndex = 8;
+            btnUpdate.Text = "&Update";
+            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Visible = false;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // FrmBlog
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(593, 388);
+            Controls.Add(btnUpdate);
             Controls.Add(txtContent);
             Controls.Add(txtAuthor);
             Controls.Add(txtTitle);
@@ -129,7 +146,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Name = "Form1";
+            Name = "FrmBlog";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -145,5 +162,6 @@
         private TextBox txtTitle;
         private TextBox txtAuthor;
         private TextBox txtContent;
+        private Button btnUpdate;
     }
 }

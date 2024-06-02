@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PSSDotNetCore.NLayer._DataAccess.Services;
+using PSSDotNetCore.NLayer._DataAccess.Models;
 
-namespace PSSDotNetCore.RestApiWithNLayer.Features.Blog
+namespace PSSDotNetCore.NLayer.BusinessLogic
 {
     public class BL_Blog
     {

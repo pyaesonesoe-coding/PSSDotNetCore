@@ -16,5 +16,10 @@ namespace PSSDotNetCore.WinFormsApp.Queries
            (@BlogTitle,
             @BlogAuthor,
 			@BlogContent)";
+
+        public static string BlogList { get; } = @"select [BlogId]
+           ,[BlogTitle]
+           ,[BlogAuthor]
+           ,[BlogContent] from [dbo].[Tbl_Blog]";
     }
 }

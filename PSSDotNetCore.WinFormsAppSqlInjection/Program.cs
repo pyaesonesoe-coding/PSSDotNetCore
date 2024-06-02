@@ -1,4 +1,4 @@
-namespace PSSDotNetCore.WinFormsApp
+namespace PSSDotNetCore.WinFormsAppSqlInjection
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace PSSDotNetCore.WinFormsApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmMainMenu());
+            Application.Run(new Form1());
         }
     }
 }
