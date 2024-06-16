@@ -7,17 +7,24 @@ using PSSDotNetCore.ConsoleApp.Dtos;
 
 namespace PSSDotNetCore.ConsoleApp.EFCoreExamples
 {
-    internal class EFCoreExample
+    public class EFCoreExample
     {
-        private readonly AppDbContext db = new AppDbContext();
+        //private readonly AppDbContext db = new AppDbContext();
+        private readonly AppDbContext db;
+
+        public EFCoreExample(AppDbContext db)
+        {
+            this.db = db;
+        }
+
         public void Run()
         {
-            //Read();
+            Read();
             //Edit(1);
             //Edit(11);
             //Create("title", "author", "content");
             //Update(2011, "title 2", "author 2", "content 2");
-            Delete(2011);
+            //Delete(2011);
         }
 
         private void Read()
