@@ -1,6 +1,8 @@
 const tblProduct = "products";
+const tblCart = "carts";
 let productId = null;
 getProductTable();
+getCartTable();
 
 function createProduct(productName, productPrice, productDescription) {
   let lst = getProducts();
@@ -14,7 +16,7 @@ function createProduct(productName, productPrice, productDescription) {
 
   const jsonProduct = JSON.stringify(lst);
   localStorage.setItem(tblProduct, jsonProduct);
-  successMessage("Saving Successful");
+  successMessage("Saving Successful.");
   clearControls();
 }
 
@@ -113,6 +115,97 @@ function getProducts() {
     lst = JSON.parse(products);
   }
   return lst;
+}
+
+function getCartTable() {
+  const lst = getCarts();
+  let count = 0;
+  let htmlRows = "";
+  lst.forEach((item) => {
+    const htmlRow = `
+        <tr>
+            <td>${++count}</td>
+            <td>${item.productName}</td>
+            <td>${item.productPrice}</td>
+            <td>${item.quantity}</td>
+            <td>${item.total}</td>
+            <td>
+                <button type="button" class="btn btn-danger" onclick="deleteCart('${
+                  item.productId
+                }')">Delete</button>
+            </td>          
+        </tr>
+        `;
+    htmlRows += htmlRow;
+  });
+  $("#tcartbody").html(htmlRows);
+  //new DataTable("#cartTable");
+}
+
+function getCarts() {
+  const carts = localStorage.getItem(tblCart);
+  let lst = [];
+  if (carts !== null) {
+    lst = JSON.parse(carts);
+  }
+  return lst;
+}
+
+function addToCart(id) {
+  const lst = getCarts();
+  const items = lst.filter((x) => x.productId === id);
+
+  if (items.length > 0) {
+    const item = items[0];
+    item.quantity += 1;
+    item.total = item.productPrice * item.quantity;
+
+    const index = lst.findIndex((x) => x.productId === id);
+    lst[index] = item;
+    const jsonCart = JSON.stringify(lst);
+    localStorage.setItem(tblCart, jsonCart);
+    successMessage("Saving Successful.");
+  } else {
+    const product = getProducts();
+    const items = product.filter((x) => x.id === id);
+    if (items.length === 0) {
+      errorMessage("Product not found");
+      return;
+    }
+
+    const item = items[0];
+    const requestModel = {
+      productId: item.id,
+      productName: item.productName,
+      productPrice: item.productPrice,
+      productDescription: item.productDescription,
+      quantity: 1,
+      total: item.productPrice,
+    };
+    lst.push(requestModel);
+    const jsonCart = JSON.stringify(lst);
+    localStorage.setItem(tblCart, jsonCart);
+    successMessage("Saving Successful.");
+  }
+  getCartTable();
+}
+
+function deleteCart(id) {
+  confirmMessage("Are you sure you want to delete?").then(function (value) {
+    let lst = getCarts();
+    const items = lst.filter((x) => x.productId === id);
+
+    if (items.length == 0) {
+      console.log("no data found");
+      return;
+    }
+
+    lst = lst.filter((x) => x.productId !== id);
+    const jsonBlog = JSON.stringify(lst);
+    localStorage.setItem(tblCart, jsonBlog);
+    successMessage("Deleting Successful.");
+    getCartTable();
+  });
 }
 
 $("#btnSave").click(function () {
