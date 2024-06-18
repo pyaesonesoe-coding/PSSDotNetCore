@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.NLayer.UI", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.NLayer.BusinessLogic", "PSSDotNetCore.NLayer.BusinessLogic\PSSDotNetCore.NLayer.BusinessLogic.csproj", "{4999A3B6-4B27-4728-AFA6-C89830CF37B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.NLayer. DataAccess", "PSSDotNetCore.NLayer. DataAccess\PSSDotNetCore.NLayer. DataAccess.csproj", "{7EE75491-55EF-47B0-808E-ABC12F4C776B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.NLayer. DataAccess", "PSSDotNetCore.NLayer. DataAccess\PSSDotNetCore.NLayer. DataAccess.csproj", "{7EE75491-55EF-47B0-808E-ABC12F4C776B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.MinimalApi", "PSSDotNetCore.MinimalApi\PSSDotNetCore.MinimalApi.csproj", "{5D1B2698-D345-4500-86CC-356B954A69DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{7EE75491-55EF-47B0-808E-ABC12F4C776B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EE75491-55EF-47B0-808E-ABC12F4C776B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE75491-55EF-47B0-808E-ABC12F4C776B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1B2698-D345-4500-86CC-356B954A69DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1B2698-D345-4500-86CC-356B954A69DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1B2698-D345-4500-86CC-356B954A69DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1B2698-D345-4500-86CC-356B954A69DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
