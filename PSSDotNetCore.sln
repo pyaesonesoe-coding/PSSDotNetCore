@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.NLayer.Busine
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.NLayer. DataAccess", "PSSDotNetCore.NLayer. DataAccess\PSSDotNetCore.NLayer. DataAccess.csproj", "{7EE75491-55EF-47B0-808E-ABC12F4C776B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.MinimalApi", "PSSDotNetCore.MinimalApi\PSSDotNetCore.MinimalApi.csproj", "{5D1B2698-D345-4500-86CC-356B954A69DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.MinimalApi", "PSSDotNetCore.MinimalApi\PSSDotNetCore.MinimalApi.csproj", "{5D1B2698-D345-4500-86CC-356B954A69DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.MvcApp", "PSSDotNetCore.MvcApp\PSSDotNetCore.MvcApp.csproj", "{1FA71A50-E323-4B56-9CC9-38E17BC41CAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{5D1B2698-D345-4500-86CC-356B954A69DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D1B2698-D345-4500-86CC-356B954A69DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D1B2698-D345-4500-86CC-356B954A69DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA71A50-E323-4B56-9CC9-38E17BC41CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA71A50-E323-4B56-9CC9-38E17BC41CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA71A50-E323-4B56-9CC9-38E17BC41CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA71A50-E323-4B56-9CC9-38E17BC41CAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
