@@ -1,0 +1,38 @@
+﻿@model TimeLineChartModel
+
+<div id="chart"></div>
+@section scripts
+{
+    <script>
+        const _series = @Html.Raw(JsonConvert.SerializeObject(Model.Data));
+        var options = {
+            series: [{
+                data: _series.map(item => ({
+                    x: item.X,
+                    y: [
+                        new Date(item.Y[0]).getTime(),
+                        new Date(item.Y[1]).getTime()
+                    ]
+                }))
+            }],
+            chart: {
+                height: 350,
+                type: 'rangeBar'
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true
+                }
+            },
+            xaxis: {
+                type: 'datetime'
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+
+    </script>
+}
+

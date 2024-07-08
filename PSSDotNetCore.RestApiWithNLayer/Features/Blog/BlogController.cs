@@ -55,19 +55,19 @@ namespace PSSDotNetCore.RestApiWithNLayer.Features.Blog
             return Ok(message);
         }
 
-        [HttpPatch("{id}")]
-        public IActionResult Patch(int id, BlogModel blog)
-        {
-            var item = _blBlog.GetBlog(id);
-            if (item is null)
-            {
-                return NotFound("No data found.");
-            }
+        //[HttpPatch("{id}")]
+        //public IActionResult Patch(int id, BlogModel blog)
+        //{
+        //    var item = _blBlog.GetBlog(id);
+        //    if (item is null)
+        //    {
+        //        return NotFound("No data found.");
+        //    }
             
-            var result = _blBlog.PatchUpdateBlog(id, blog);
-            string message = result > 0 ? "Updating Successful." : "Updating Failed.";
-            return Ok(message);
-        }
+        //    var result = _blBlog.PatchUpdateBlog(id, blog);
+        //    string message = result > 0 ? "Updating Successful." : "Updating Failed.";
+        //    return Ok(message);
+        //}
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
