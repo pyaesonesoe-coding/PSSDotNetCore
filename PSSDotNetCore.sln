@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.MvcApp", "PSS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.MvcChartApp", "PSSDotNetCore.MvcChartApp\PSSDotNetCore.MvcChartApp.csproj", "{1F88BE02-9B4A-4F67-B35D-1C140124BF32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.MvcApp2", "PSSDotNetCore.MvcApp2\PSSDotNetCore.MvcApp2.csproj", "{58B79E8F-74D0-474D-A80F-AC08EDD5008A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSSDotNetCore.MvcApp2", "PSSDotNetCore.MvcApp2\PSSDotNetCore.MvcApp2.csproj", "{58B79E8F-74D0-474D-A80F-AC08EDD5008A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSDotNetCore.ConsoleAppLogging", "PSSDotNetCore.ConsoleAppLogging\PSSDotNetCore.ConsoleAppLogging.csproj", "{68DC47EC-15EE-4746-99EE-061D0DF06E24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{58B79E8F-74D0-474D-A80F-AC08EDD5008A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58B79E8F-74D0-474D-A80F-AC08EDD5008A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58B79E8F-74D0-474D-A80F-AC08EDD5008A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68DC47EC-15EE-4746-99EE-061D0DF06E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DC47EC-15EE-4746-99EE-061D0DF06E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DC47EC-15EE-4746-99EE-061D0DF06E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DC47EC-15EE-4746-99EE-061D0DF06E24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
